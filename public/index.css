@@ -1,0 +1,26 @@
+img {
+  height: 10%;
+  width: 10%;
+  display: block;
+  margin: auto;
+}
+
+.shuffle-button {
+  display: block;
+  margin: 30px auto;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 100px;
+  padding: 0.25em 0.75em;
+  background-color: rgba(65, 197, 94, 0.739);
+  color: white;
+  transition: 0.2s all;
+}
+
+.shuffle-button:hover {
+  color: rgb(231, 226, 226);
+  background-color: rgb(12, 153, 59);
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0.3em 0.8em;
+}
