@@ -1,4 +1,124 @@
-img {
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  margin: 5% auto;
+}
+
+.container-deck {
+  width: 15%;
+  margin: auto;
+}
+
+.container-deck img {
+  width: 100%;
+}
+
+.container-button {
+  width: 15%;
+  margin: 5% auto;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: lightseagreen;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  transition: 0.2s all;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s all;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+button:hover:active {
+  transform: translateY(-10px) scale(1.2);
+  font-size: 30px;
+  background-color: lightseagreen;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(32, 166, 178);
+  color: rgb(251, 251, 141);
+}
+
+button:hover::after {
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+.container-cards {
+  height: 200px;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  padding-right: 40px;
+  background: url("./images/placematt.jpg");
+  background-size: cover;
+  background-clip: border-box;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.container-cards::after {
+  content: "";
+  position: absolute;
+  height: 109%;
+  width: 101%;
+  z-index: -1;
+  top: -5%;
+  left: -0.6%;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: rgb(224, 224, 224);
+  pointer-events: none;
+}
+
+.container-card {
+  display: inline-block;
+  height: 150px;
+  position: absolute;
+  transition: 0.25s all;
+}
+
+.container-cards:hover .container-card {
+  cursor: pointer;
+  opacity: 0.05;
+}
+
+.container-cards .container-card:hover {
+  opacity: 1;
+  transform: translateY(-25px) scale(1.2);
+  border: 4px solid blueviolet;
+  box-shadow: black;
+}
+.container-card img {
+  height: 100%;
+  width: 100%;
+}
+
+/* .container {
+  width: 100%;
+}
+.deck > img {
   height: 10%;
   width: 10%;
   display: block;
@@ -12,15 +132,29 @@ img {
   text-align: center;
   border-radius: 100px;
   padding: 0.25em 0.75em;
-  background-color: rgba(65, 197, 94, 0.739);
+  background-color: rgb(15, 187, 53);
   color: white;
   transition: 0.2s all;
 }
 
+.card {
+  position: absolute;
+  display: block;
+  transition: 0.3s all;
+}
+
+.card img {
+  height: 10%;
+  width: 10%;
+}
 .shuffle-button:hover {
   color: rgb(231, 226, 226);
   background-color: rgb(12, 153, 59);
-  font-size: 50px;
   cursor: pointer;
-  padding: 0.3em 0.8em;
 }
+
+.card-map {
+  margin: 400px auto;
+  background-color: royalblue;
+}
+ */

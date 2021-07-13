@@ -2,8 +2,8 @@ import React from "react";
 
 const ShuffleButton = () => {
   return (
-    <div>
-      <button className="shuffle-button">Shuffle!</button>
+    <div className="container-button">
+      <button>Shuffle!</button>
     </div>
   );
 };
